@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.HeaderContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+}

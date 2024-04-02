@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.LogoDiv {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.LogoImg {
+    height: 70px;
+    width: 70px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.logo-text {
+    cursor: pointer;
+    display: block;
+    padding: 0vw 1vw;
+    position: relative;
+}
+
+.LogoDiv span {
+    text-decoration: none;
+}
+
+.Logoh1 {
+    color: #fff;
+    font-size: clamp(1rem, 4vw, 2rem);
+}
+
+.Logoh1-lower {
+    
+    color: #fff;
+    position: absolute;
+    right: 1vw;
+    font-size: clamp(0.6rem, 3vw, 0.9rem);
+}

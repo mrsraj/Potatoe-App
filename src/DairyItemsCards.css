@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+.DairyItemsCards {
+    height: auto;
+    width: 500px;
+    border: 3px #e8e7e7de solid;
+    /* display: flex; */
+    padding: 10px 15px 15px 15px;
+
+}
+
+h2 {
+    color: rgb(41, 106, 85);
+    padding: 5px 0px;
+}
+
+.p1 {
+    color: rgb(5, 156, 156);
+    padding: 4px 0px;
+}
+
+.p2 {
+    padding: 2px 0px;
+}
+
+span {
+    text-decoration: line-through;
+}
+
+.p4 {
+    color: rgb(11, 217, 217);
+}
+
+
+
+
+
+.dairyItems {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(74, 93, 123);
+    border: 3px rgb(48, 46, 46) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* margin: 5px; */
+}
+
+.dairyItems p {
+    font-size: 80px;
+    /* display: flex; */
+}
+
+.productName {
+    font-weight: 600;
+}
+
+.brandName {
+    color: rgb(41, 106, 85);
+    font-weight: 600;
+}
+
+.productType {
+    color: rgb(63, 196, 152);
+}
+
+.productImage {
+    vertical-align: middle;
+    border-style: none;
+    height: 146px;
+    width: 146px;
+    object-fit: cover;
+}

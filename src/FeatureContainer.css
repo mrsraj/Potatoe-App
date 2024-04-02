@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.FeatureContainer {
+    background: #0291a0;
+    display: flex;
+    height: 93px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.MobileRecharge{
+    text-align: center;
+}
+
+.MobileRecharge>a {
+    text-decoration: none;
+    display: flex;
+    max-width: 90px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.Feature-image {
+    background-color: #fff;
+    border-radius: 100%;
+    height: fit-content;
+    width: fit-content;
+    padding: 17px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Feature-text {
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.Jobs{
+    height: 30px;
+    width: 30px;
+}
+
+@media only screen and (max-width: 413px) {
+    .FeatureContainer{
+        /* max-width: 100%; */
+        overflow-x: auto;
+    }
+}

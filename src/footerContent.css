@@ -1,0 +1,22 @@
+
+.footerContent{
+   display: flex;
+   width: 95%;
+   height: auto;
+   justify-content: space-around;
+}
+
+
+.footerText .hp, .P{
+    color: #fff;
+    
+    margin: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.P{
+    font-size: 20px;
+    text-decoration: none;
+}
+
