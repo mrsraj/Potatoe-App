@@ -5,46 +5,50 @@ import { useState, useEffect } from "react";
 function DairyItemsCards() {
     const [dairyProducts, setDairyProducts] = useState([]);
 
+    const fetchData = async () => {
+        try {
+            const response = await fetch("https://putatoetest-k3snqinenq-uc.a.run.app/v1/api/homepage_prodcuct_new_api/6", {
+                headers: {
+                    'authtoken': "NNHR6DQ6YJXYMV3RTNNLHAMOBNHYF6X51ZK5H0ZI05HCFAE1QE",
+                }
+            });
+
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const data = await response.json();
+
+
+            if (data.popularproduct && data.popularproduct['Dairy Products']) {
+
+                setDairyProducts(data.popularproduct['Dairy Products'].products);
+            }
+        }
+
+        catch (error) {
+            console.error('Error:', error);
+        }
+    };
+
+
+
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch("https://putatoetest-k3snqinenq-uc.a.run.app/v1/api/homepage_prodcuct_new_api/6", {
-                    headers: {
-                        'authtoken': "NNHR6DQ6YJXYMV3RTNNLHAMOBNHYF6X51ZK5H0ZI05HCFAE1QE",
-                    }
-                });
-
-
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-
-                const data = await response.json();
-
-
-                if (data.popularproduct && data.popularproduct['Dairy Products']) {
-
-                    setDairyProducts(data.popularproduct['Dairy Products'].products);
-                }
-            }
-
-            catch (error) {
-                console.error('Error:', error);
-            }
-        };
-
         fetchData();
-
     }, []);
 
-    //   console.log('dairyProducts:', dairyProducts);
+
+
+    function handleClick(val) {
+        console.log(val);
+    }
 
     return (
         <>
             {dairyProducts.map((product) => (
-                <div className="DairyItemsCards" key={product.id}>
+                <div className="DairyItemsCards" key={product.id} onClick={() => handleClick(product.product_type)}>
                     <div className="dairyItems">
-                        {/* <img src="https://storage.googleapis.com/putatoeapp/Image/testImage/BMO57Q9" alt="" /> */}
                         <img className="productImage" src={product.logo} alt="productImage" />
                     </div>
                     <h3 className="brandName">{product.bran_name}</h3>
@@ -54,7 +58,7 @@ function DairyItemsCards() {
                     <p className="p2">{product.brand}</p>
                     <p className="p3"> <b>Rs. {product.price}</b><p>{product.
                         discount} % OFF</p> <span> M.R.P Rs.{product.qty_list[0].actual_price}</span></p>
-                    <p>{product.brand}</p>    
+                    <p>{product.brand}</p>
                     <p className="p4">{product.stock_status} </p>
                     <p>Unit: {product.qty_list[0].units}</p>
                     <AddCardBtn />
@@ -62,6 +66,7 @@ function DairyItemsCards() {
             ))}
         </>
     );
+
 }
 
 export default DairyItemsCards;

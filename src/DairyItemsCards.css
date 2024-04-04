@@ -8,7 +8,7 @@
     border: 3px #e8e7e7de solid;
     /* display: flex; */
     padding: 10px 15px 15px 15px;
-
+    cursor: pointer;
 }
 
 h2 {

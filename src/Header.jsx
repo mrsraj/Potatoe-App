@@ -1,11 +1,10 @@
-import "./Header.css"
+import "./Header.css";
 import HeaderContainer from "./HeaderContainer";
 function Header() {
     return (
         <div className="header">
 
             <HeaderContainer />
-
 
         </div>
     );

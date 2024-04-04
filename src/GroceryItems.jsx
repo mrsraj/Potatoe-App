@@ -55,7 +55,7 @@ function GroceryItems() {
                     <p className="p1">{product.description}</p>
                     <p className="p2">{product.brand}</p>
                     <p className="p3"> <b>Rs. {product.price}</b><p>{product.
-                        discount} % OFF</p> <span> M.R.P Rs.{product.qty_list[0].actual_price}</span></p>
+                        discount} % OFF</p> <span className="actual_price"> M.R.P Rs.{product.qty_list[0].actual_price}</span></p>
                     <p>{product.brand}</p>    
                     <p className="p4">{product.stock_status} </p>
                     <p>Unit: {product.qty_list[0].units}</p>

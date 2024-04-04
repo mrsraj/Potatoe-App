@@ -1,15 +1,15 @@
-import "./notificationContaier.css";
+import "./NotificationContaier.css";
 
-function notificationContaier() {
+function NotificationContaier() {
     return (
     <div className="notificationContaier">
 
-        <div><i class="fa-regular fa-message">i</i></div>
-        <div><i class="fa-solid fa-bell">j</i></div>
-        <div><i class="fa-solid fa-cart-shopping"></i></div>
+        <div><i className="fa-regular fa-message"></i></div>
+        <div><i className="fa-solid fa-bell"></i></div>
+        <div><i className="fa-solid fa-cart-shopping"></i></div>
 
     </div>
     );
 }
 
-export default notificationContaier;
+export default NotificationContaier;
