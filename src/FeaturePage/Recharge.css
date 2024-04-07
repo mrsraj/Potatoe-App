@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Recharge {
+    width: 100%;
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    /* border: 3px solid gray; */
+}
+
+.RechargeCard {
+    width: 300px;
+    height: 350px;
+    border: 3px solid gray;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+
+.btn,.skill,.salary,.Description {
+    margin: 15px;
+    text-align: center;
+    width: 90%;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 10px;
+    background-color: rgb(50, 41, 41);
+    color: #fff;
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgb(50, 41, 41);
+    color: #fff;
+    border: none;
+}
+
+.Blogsimage{
+   text-align: center;
+   height: auto;
+    width: 250px;
+    padding: 5px;
+}
+
+.Blogsimage img{
+    height:300px ;
+    width: 280px;
+}
+
+.BlogSearch{
+    width:90% ;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 10px;
+    border: 2px solid rgb(199, 198, 198);
+}
