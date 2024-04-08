@@ -2,8 +2,13 @@ import "./DairyItemsCards.css";
 import AddCardBtn from "./AddCardBtn.jsx";
 import { useState, useEffect } from "react";
 
+//import for data send:
+import { useNavigate } from 'react-router-dom';
+
 function DairyItemsCards() {
     const [dairyProducts, setDairyProducts] = useState([]);
+
+    const navigate = useNavigate();
 
     const fetchData = async () => {
         try {
@@ -40,14 +45,15 @@ function DairyItemsCards() {
 
 
 
-    function handleClick(val) {
-        console.log(val);
+    function handleClick(userData) {
+        console.log(userData);
+        navigate('/receiver', { state: { userData } });
     }
 
     return (
         <>
             {dairyProducts.map((product) => (
-                <div className="DairyItemsCards" key={product.id} onClick={() => handleClick(product.product_type)}>
+                <div className="DairyItemsCards" key={product.id} onClick={() => handleClick(product)}>
                     <div className="dairyItems">
                         <img className="productImage" src={product.logo} alt="productImage" />
                     </div>
@@ -56,8 +62,8 @@ function DairyItemsCards() {
                     <h4 className="productType">{product.product_type}</h4>
                     <p className="p1">{product.description}</p>
                     <p className="p2">{product.brand}</p>
-                    <p className="p3"> <b>Rs. {product.price}</b><p>{product.
-                        discount} % OFF</p> <span> M.R.P Rs.{product.qty_list[0].actual_price}</span></p>
+                    <p className="p3"> <b>Rs. {product.price}</b> <span> M.R.P Rs.{product.qty_list[0].actual_price}</span></p>
+                    <p>{product.discount} % OFF</p>
                     <p>{product.brand}</p>
                     <p className="p4">{product.stock_status} </p>
                     <p>Unit: {product.qty_list[0].units}</p>

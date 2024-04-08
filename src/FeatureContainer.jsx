@@ -18,7 +18,7 @@ function FeatureContainer() {
                     <div className="Feature-image">
                         <img src="https://putatoetest.web.app/static/media/DTHrecharge.cc6eb273fb6bfff240daf749a2a444be.svg" alt="Bill Payment" />
                     </div>
-                    <div className="Feature-text">BILL</div>
+                    <div className="Feature-text">BILL PAYMENT</div>
                 </a>
             </div>
 

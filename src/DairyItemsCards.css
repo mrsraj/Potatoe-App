@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    color: black;
+    text-decoration: none;
 }
 
 .DairyItemsCards {
@@ -27,15 +29,12 @@ h2 {
 
 span {
     text-decoration: line-through;
+
 }
 
 .p4 {
     color: rgb(11, 217, 217);
 }
-
-
-
-
 
 .dairyItems {
     width: 100%;
@@ -73,4 +72,18 @@ span {
     height: 146px;
     width: 146px;
     object-fit: cover;
+}
+
+.down-icon,
+i {
+    color: #fff;
+}
+
+.filterDatacard{
+    height: auto;
+    width: 200px;
+    border: 3px #e8e7e7de solid;
+    padding: 10px 15px 15px 15px;
+    cursor: pointer;
+    margin: 5px;
 }

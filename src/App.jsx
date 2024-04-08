@@ -8,6 +8,7 @@ import BillPage from './FeaturePage/BillPage.jsx';
 import Recharge from './FeaturePage/Recharge.jsx';
 import JobsPage from './FeaturePage/JobsPage.jsx';
 import BlogsPage from './FeaturePage/BlogsPage.jsx';
+import FilterData from './FilterData.jsx';
 
 
 import { Routes, Route } from 'react-router-dom';
@@ -25,6 +26,7 @@ function App() {
         <Route path='/Recharge' element={<Recharge />} />
         <Route path='/JobsPage' element={<JobsPage />} />
         <Route path='/BlogsPage' element={<BlogsPage />} />
+        <Route path='/receiver' element={<FilterData />} />
       </Routes>
 
       {/* <Container /> */}
