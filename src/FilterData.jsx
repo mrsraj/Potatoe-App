@@ -1,11 +1,18 @@
 
 import "./FilterCss.css";
 import ReceiverComponent from "./ProductDetails";
+import FilterPage from "./FilterPage";
 
-function FilterData(){
-    return(
+function FilterData() {
+    return (
         <div className="FilterData">
-            <ReceiverComponent/>
+            <div className="filterDataDiv">
+                <ReceiverComponent />
+            </div>
+            <div className="filterCkeckBox">
+                <FilterPage />
+            </div>
+
         </div>
     );
 }

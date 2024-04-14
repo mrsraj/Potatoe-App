@@ -10,7 +10,7 @@ function ReceiverComponent() {
     const receivedData = location.state && location.state.userData;
 
     const productTypeId = receivedData.producttype_id; //Product id for filter related product
-    const subServiceId=receivedData.sub_service_id;
+    const sunServiceId=receivedData.sub_service_id;
 
 
     async function apidata() {
@@ -21,9 +21,9 @@ function ReceiverComponent() {
             rating: null,
             service_id: "6",
             sort_by: null,
-            sub_service_id: subServiceId,
+            sub_service_id: sunServiceId,
             color_code: [],
-            product_type_id: [1445],
+            product_type_id: [productTypeId],
         };
         const authToken = "RSLWI15YALYAWDZH46A29DKHXC96BELUYNRKIHCGMGAF6NTOAF";
 

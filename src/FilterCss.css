@@ -1,9 +1,18 @@
 .FilterData{
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    max-height:90vh ;
-    justify-content: space-around;
+    height:85vh ;
     width: 100%;
     padding: 10px;
+    overflow: auto;
 }
+.filterDataDiv{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    float: right;
+}
+
+/* .filterCkeckBox{
+    height: 84vh;
+} */

@@ -1,0 +1,51 @@
+.checklist-list {
+    align-items: center;
+    display: flex;
+    height: 17px;
+}
+
+.checklist-list>label {
+    align-items: center;
+    display: flex;
+    letter-spacing: .5px;
+    margin: 0;
+    overflow: visible;
+    padding-left: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.checklist-heading {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    line-height: 15px;
+    margin: 10px 0px;
+    padding: 0 10px;
+}
+
+.checklist-items-container>form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input[type=checkbox] {
+    
+    width: 10%;
+    cursor: pointer;
+}
+
+.checklist-list>label {
+    
+    cursor: pointer;
+}
+
+.selection-panel-container{
+    width: 15%;
+    overflow: auto;
+}
+

@@ -52,6 +52,9 @@ function DairyItemsCards() {
 
     return (
         <>
+            <div style={{width:'100%',backgroundColor:'red'}}>
+                <h2>Hello</h2>
+            </div>
             {dairyProducts.map((product) => (
                 <div className="DairyItemsCards" key={product.id} onClick={() => handleClick(product)}>
                     <div className="dairyItems">

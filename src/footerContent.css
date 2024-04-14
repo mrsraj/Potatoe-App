@@ -2,8 +2,10 @@
 .footerContent{
    display: flex;
    width: 95%;
-   height: auto;
+   height: 300px;
+   flex-wrap: wrap;
    justify-content: space-around;
+   overflow: auto;
 }
 
 

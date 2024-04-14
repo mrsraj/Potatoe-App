@@ -1,10 +1,10 @@
 
 import "./footerContent.css";
 
-function FooterContent(){
+function FooterContent() {
     return (
         <div className="footerContent">
-               
+
             <div className="footerText">
                 <h2 className="hp">USEFUL LINKS</h2>
                 <p className="P">Recharge & Payments</p>
@@ -12,11 +12,11 @@ function FooterContent(){
                 <p className="P">Blog Posts</p>
                 <p className="P">Promotions</p>
                 <p className="P">Loans</p>
-            </div> 
+            </div>
 
-           <div className="footerText">
+            <div className="footerText">
+                
                 <h2 className="hp">ABOUT POTATOE</h2>
-
                 <p className="P">About us</p>
                 <p className="P">Contact us</p>
                 <p className="P">Terms and conditions</p>
