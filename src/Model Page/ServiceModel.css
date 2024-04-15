@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+.ServiceModel {
+    height: 320px;
+    width: 250px;
+    border: 2px solid rgb(172, 171, 171);
+    border-radius: 10px;
+    position: fixed;
+    /* top: 40%; */
+}
+
+.ServiceHeader {
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(45deg, rgb(4, 136, 172), rgb(18, 71, 230));
+}
+
+.A {
+    text-align: center;
+    margin: 2px;
+    background-color: rgb(152, 152, 151);
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 20px;
+    color: rgb(6, 77, 96);
+}
+
+.ModelContentDiv {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    height: 265px;
+    width: 245px;
+}
+
+.ServiceHeader {
+    text-align: center;
+    padding: 3px;
+}
+
+.ButtonShow {
+    height: 30px;
+    width: auto;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgb(4, 136, 172);
+    color: rgb(219, 219, 231);
+    border: 2px solid rgb(18, 71, 230);
+    margin: 3px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.CancelModel {
+    padding: 5px;
+    float: right;
+    background-color: rgb(249, 100, 100);
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}

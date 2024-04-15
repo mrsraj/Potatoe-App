@@ -6,3 +6,13 @@
     scrollbar-width: none;
     
 }
+
+.ServiceModelDiv{
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(4, 136, 172);
+    padding: 0px 3px;
+}
+

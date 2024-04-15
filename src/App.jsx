@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './Header.jsx';
 import Container from './Container.jsx';
+import ServiceModel from './Model Page/ServiceModel.jsx';
 
 // import featue Page
 
@@ -18,7 +19,11 @@ import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div>
+
       <Header />
+      <div className="ServiceModelDiv">
+        <ServiceModel />
+      </div>
 
       <Routes>
         <Route path='/' element={<Container />} />
